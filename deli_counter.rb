@@ -12,7 +12,7 @@ end
 
 
 def take_a_number(katz_deli, name)
-  line = "Welcome, #{name}."
+  line = "Welcome, #{name}. "
   katz_deli.each.with_index(1) do |person, i|
     line << "You are number #{i} in line."
   end
