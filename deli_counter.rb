@@ -12,6 +12,9 @@ end
 
 
 def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts name
+  line = "Welcome, #{name}."
+  katz_deli.each.with_index(1) do |person, i|
+    line << "You are number #{i} in line."
+  end
+  puts line
 end
